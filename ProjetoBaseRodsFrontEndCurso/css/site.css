@@ -5,8 +5,13 @@ body {
 	line-height: 1.5;
 }
 
-h1, h2 {
+h1, h2, .subtitulo-principal {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
 }
 
 footer {
@@ -50,17 +55,15 @@ aside h1 {
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 150%;
 }
 
 .titulo-principal {
 	text-align: center;
 	background-color: #851944;
 	color: #FFF;
-	padding: 25px;
-	border-bottom: 10px solid black;
-	font-size: 60px;
-    text-transform: uppercase;
+	padding: 2rem;
+	border-bottom: .5em solid black;
 }
 
 .container {
@@ -113,7 +116,7 @@ h2 {
 }
 
 .subtitulo-texto {
-    font-size: 30px;
+    font-size: 2em;
     clear: both;
 }
 

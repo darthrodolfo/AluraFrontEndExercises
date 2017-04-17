@@ -22,8 +22,8 @@ blockquote {
 
 .citacao-bio {
     background-color: #D9E5E3;
-    border: 10px solid #C2CCCA;
-    width: 250px;
+    border: .5em solid #C2CCCA;
+    width: 30ch;
     box-sizing: border-box;
-    margin: 20px 40px;
+    margin: 1em 2em;
 }
