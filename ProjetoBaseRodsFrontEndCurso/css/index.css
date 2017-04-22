@@ -3,6 +3,17 @@
     border-radius: 10% 50% / 50% 10%;
 }
 
+body {
+    perspective: 6px;
+    perspective-origin: 50% 160px;
+    transform-style: preserve-3d;
+}
+
+body, html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
 header {
     position: relative;
 }
@@ -173,14 +184,16 @@ main {
     float: none;
 }
 
-.palavra-home-3d
-{
+.palavra-home-3d {
     position: absolute;
-    perspective: 6px;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.palavra-home-3d, .titulo-principal {
+    transform-style: preserve-3d;
 }
 
 .palavra-home {
