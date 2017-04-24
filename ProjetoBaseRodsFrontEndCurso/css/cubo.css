@@ -1,0 +1,55 @@
+body {
+    perspective: 000px;
+}
+
+.cubo {
+    position: relative;
+    transform-style: preserve-3d;
+    top: 100px;
+    left: 100px;
+    transform: rotateX(10deg) rotateY(10deg);
+    width: 200px;
+    height: 200px;
+}
+
+.face {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    
+}
+
+.vermelho {
+    background-color: red;
+    transform: translateZ(100px);
+}
+
+.azul {
+    background-color: blue;
+    transform: translateX(100px) rotateY(90deg);
+}
+
+.amarelo {
+    background-color: yellow;
+    transform: translateX(-100px) rotateY(-90deg);
+}
+
+.preto {
+    background-color: black;
+    transform: translateY(-100px) rotateX(90deg);
+}
+
+.laranja {
+    background-color: orange;
+    transform: translateY(100px) rotateX(-90deg);
+}
+
+.cinza {
+    background-color: gray;
+    transform: translateZ(-100px) rotateX(180deg);
+}
+
+

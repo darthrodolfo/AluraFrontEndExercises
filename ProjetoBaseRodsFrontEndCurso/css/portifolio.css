@@ -1,0 +1,27 @@
+.container-figuras {
+    margin: auto;
+}
+
+.container-figuras img {
+    width: 100%;
+    box-shadow: 0 0 4px #000;
+}
+
+.container-figuras li {
+    display: inline-block;
+    border: 8px solid black;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFFFC;
+}
+
+h3 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}

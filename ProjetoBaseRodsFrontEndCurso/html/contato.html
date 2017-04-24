@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portifolio João Da Silva</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <link rel="stylesheet" href="../css/site.css">
+        <link rel="stylesheet" href="../css/contato.css">
+    </head>
+    <body>
+        <main>
+            <h1 class="titulo-principal">Contato</h1>
+                <form>
+                    <fieldset>
+                        <legend>Seus dados</legend>
+                        <label>
+                            Nome:
+                            <input type="text" name="nome-contato" placeholder="Seu nome aqui" pattern="[A-Za-z ']{3,}" title="Mínimo de 3 caracteres. Sem caracteres especiais ou acentos." autofocus required>
+                        </label>
+
+                        <label>
+                            Email:
+                            <input type="email" name="email-contato" placeholder="seu@email.com" required>
+                        </label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Assunto</legend>
+                        
+                        <select name="assunto" required>
+                            <option value="Blog">Blog</option>
+                            <option value="Serviço">Serviço</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        
+                        <label>
+                            <input type="radio" name="assunto" value="Blog">
+                            Blog
+                        </label>
+
+                        <label>
+                            <input type="radio" name="assunto" value="Serviço">
+                            Serviço
+                        </label>
+                        
+                        <fieldset>
+                            <input type="radio" name="assunto" value="Outro" id="outro">
+                            <label for="outro">Outro</label>
+                            <input type="text" name="outro-assunto" placeholder="Digite o assunto">
+                        </fieldset>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <label>
+                            Mensagem:
+                            <textarea id="msg" name="mensagem" cols="30" rows="6" placeholder="Digite aqui sua mensagem"></textarea>
+                        </label>
+                    </fieldset>
+                    
+                    <button type="submit">Enviar mensagem</button>
+                    
+                </form>
+        </main>
+        
+        <img class="foto-do-cara" src="../img/eu.jpg" alt="O mano que tem a foto no curso."/>
+        
+        <aside class="navegacao-site"> 
+                <h1>João da Silva</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portifolio.html">Portifólio</a></li>
+                        <li><a href="bio.html">Sobre mim</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                    </nav>
+                    <ul class="icones-redes-sociais">
+                         <li>
+                                <a class="linkedin" data-legenda="Veja meu currículo" href="//www.linkedin.com">Linkedin
+                                </a>
+                            </li>
+                            <li>
+                                <a class="github" data-legenda="veja meus projetos opensource!" href="//www.github.com">Github
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter" data-legenda="Siga-me no Twitter!" href="//www.twitter.com">Twitter
+                                </a>
+                            </li>
+                    </ul>
+        </aside>
+    </body>
+</html>

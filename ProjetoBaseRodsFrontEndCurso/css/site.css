@@ -1,0 +1,235 @@
+body {
+	font-family: "Crimson Text", "Times New Roman", serif;
+	background-color: #F2FFFC;
+	font-size: 120%;
+	line-height: 1.5;
+}
+
+
+h1, h2, .subtitulo-principal {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 5px 5px #000;
+}
+
+footer {
+    clear: both;
+}
+
+footer a:focus,
+footer a:hover,
+main a:hover,
+main a:focus {
+    color: red;
+}
+
+p {
+	text-align: justify;
+	margin: 20px 0;
+}
+
+nav a {
+	color: #F2FFFC;
+    text-transform: lowercase;
+}
+
+main {
+    float: left;
+    width: 85%;
+}
+
+main a {
+	color: #851944;
+}
+
+aside {
+    float: right;
+    box-sizing: border-box;
+    width: 15%;
+}
+
+aside a {
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+aside h1 {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+.titulo-principal {
+	text-align: center;
+	background-color: #851944;
+	color: #FFF;
+	padding: 2rem;
+	border-bottom: .5em solid black;
+}
+
+.container {
+	width: 720px;
+	margin: auto;
+	padding: 30px 0;
+    padding-bottom: 150px;
+}
+
+.foto-do-cara, .navegacao-site {
+    float: right;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    box-sizing: border-box;
+}
+
+.foto-do-cara {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navegacao-site {
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    text-align: center;
+    position: relative;
+    top: 305px;
+    width: 15%;
+}
+
+.navegacao-site a {
+    color: inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+.navegacao-site a:hover
+.navegacao-site a:focus {
+    text-shadow: 5px 5px .1em purple;
+}
+
+.navegacao-site h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.citacao-bio, .navegacao-site, .page-footer {
+    padding: 20px;
+}
+
+.texto {
+    margin: auto;
+    padding: 30px;
+    padding-left: 70px;
+}
+
+.subtitulo-texto {
+    font-size: 2em;
+    clear: both;
+}
+
+.icones-redes-sociais li {
+    display: inline-block;
+}
+
+.icones-redes-sociais a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-indent: -4999px;
+    color: transparent;
+    position: relative;
+}
+
+.github {
+    background-image:  url(../img/github.png);
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-legenda);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    color: white;
+    width: 300%;
+    text-indent: 0;
+    font-size: .75em;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    width: .75em;
+    height: .75em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+    
+        
+}
+
+.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.linkedin {
+    background-image:  url(../img/linkedin.png);
+}
+
+.page-footer {
+    background-image: radial-gradient(ellipse at bottom left,
+        rgba(60, 29, 61, .8),
+        rgba(60, 29, 61, .8) 65%,
+        black 65%,
+        black 68%,
+        transparent 68%);
+    
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+    
+    
+	color: #FFF;
+    position: fixed;
+    clear: both;
+    padding: 1em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;    
+}
+
+#gravataBorboleta {
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid red;
+    border-right: 30px solid red;
+    border-top: 20px solid transparent;
+    width: 0;
+    margin-left: 20px;
+}
+
+#trianguloReto {
+    margin-top: 5px;
+    border-bottom: 20px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid red;
+    border-top: 20px solid transparent;
+    width: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#tituloDesenhoRods {
+    font-family: "Open Sans Condensed";
+    margin-left: 10px;
+}
+
+
