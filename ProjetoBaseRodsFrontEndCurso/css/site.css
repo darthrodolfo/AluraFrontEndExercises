@@ -13,10 +13,18 @@ h1, h2, .subtitulo-principal {
 h1 {
     text-transform: uppercase;
     font-size: 3em;
+    text-shadow: 5px 5px #000;
 }
 
 footer {
     clear: both;
+}
+
+footer a:focus,
+footer a:hover,
+main a:hover,
+main a:focus {
+    color: red;
 }
 
 p {
@@ -37,7 +45,6 @@ main {
 main a {
 	color: #851944;
 }
-
 
 aside {
     float: right;
@@ -101,6 +108,11 @@ h2 {
     font-family: "Open Sans Condensed", sans-serif;
 }
 
+.navegacao-site a:hover
+.navegacao-site a:focus {
+    text-shadow: 5px 5px .1em purple;
+}
+
 .navegacao-site h1 {
     font-size: 30px;
     margin-bottom: 25px;
@@ -130,10 +142,39 @@ h2 {
     height: 40px;
     display: inline-block;
     text-indent: -4999px;
+    color: transparent;
+    position: relative;
 }
 
 .github {
     background-image:  url(../img/github.png);
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-legenda);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    color: white;
+    width: 300%;
+    text-indent: 0;
+    font-size: .75em;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    width: .75em;
+    height: .75em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
+    
+        
 }
 
 .twitter {
@@ -145,11 +186,25 @@ h2 {
 }
 
 .page-footer {
-    background-color: black;
-	color: #F2FFFC;
+    background-image: radial-gradient(ellipse at bottom left,
+        rgba(60, 29, 61, .8),
+        rgba(60, 29, 61, .8) 65%,
+        black 65%,
+        black 68%,
+        transparent 68%);
+    
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+    
+    
+	color: #FFF;
     position: fixed;
-    bottom: 0px;
+    clear: both;
+    padding: 1em;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    box-sizing: border-box;    
 }
 
 #gravataBorboleta {

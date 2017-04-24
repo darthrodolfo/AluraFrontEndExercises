@@ -6,10 +6,16 @@ em {
 	font-style: italic;
 }
 
-.artigo {
-    padding-bottom: 1.9em;
-    border-bottom: .125em solid #ccc;
-    margin-bottom: 1em;
+.artigo + .artigo {
+    padding-top: 1.5em;
+    margin-top: 1em;
+    background-position: top center;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-image:  linear-gradient(to right,
+        transparent,
+        rgba(200, 200, 200, 1),
+        transparent);
 }
 
 .leia-mais {

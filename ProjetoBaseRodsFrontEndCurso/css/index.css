@@ -1,6 +1,10 @@
+.titulo-principal {
+}
+
 .foto-home {
     height: 200px;
-    border-radius: 10% 50% / 50% 10%;
+    border-radius: 50%;
+    box-shadow: 0 0 1em #000;
 }
 
 body {
@@ -48,6 +52,7 @@ header {
     height: 6em;
     padding: 1em;
     background-color: white;
+    display: none;
 }
 
 .saudacao p {
@@ -89,6 +94,7 @@ header {
     text-align: center;
     padding: .5em;
     margin: 2em auto;
+    box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF;
 }
 
 .secao-inicio {
@@ -100,10 +106,21 @@ header {
     font-size: 3em;
     text-shadow: 2px 2px #000;
     margin-bottom: .5em;
+    text-shadow: 5px 5px #000
         
 }
 .trabalhos {
-    background-color: #3C1D3D;
+    background-image: linear-gradient(135deg,
+        transparent,
+        transparent 14px,
+        rgba(0, 0, 0, 0.1) 14px,
+        rgba(0, 0, 0, 0.1) 15px,
+        transparent 15px,
+        transparent);
+    
+    background-attachment: fixed;
+    background-size: 20px 20px;
+    
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
 }
@@ -122,11 +139,21 @@ header {
     width: 100%;
     display: block;
 }
+
 .blog {
-    background-color: #999;
     color: #FFF;
     border-bottom: .5em solid #851944;
     position: relative;
+    
+    background-image: linear-gradient(45deg,
+        transparent,
+        transparent 14px,
+        rgba(0, 0, 0, 0.1) 14px,
+        rgba(0, 0, 0, 0.1) 15px,
+        transparent 15px,
+        transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
 
 .blog small {
@@ -144,8 +171,15 @@ header {
     display: block;
 }
 
-.blog .mais-recente {
+.mais-recente a:hover + .inicio-post,
+.mais-recente a:focus + .inicio-post {
+    display: block;
+}
+
+.mais-recente a:hover,
+.mais-recente a:focus {
     background-color: #F2FFFC;
+    color: #F26;
 }
 
 .blog .mais-recente a {
@@ -209,65 +243,77 @@ main {
     left: 60%;
     -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+    opacity: 0.9;
 }
 .boas-praticas {
     top: 70%;
     left: 20%;
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
+    opacity: 0.5
 }
 .codigo-limpo {
     top: 45%;
     left: 25%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg)  scale(.25);
+    opacity: .5;
 }
 .css3 {
     top: 55%;
     left: 35%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
+    opacity: 0.6;
 }
 .html5 {
     top: 30%;
     left: 65%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+    opacity: 0.8
 }
 .javascript {
     top: 15%;
     left: 60%;
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
+    opacity: .3;
 }
 .acessibilidade {
     top: 30%;
     left: 35%;
     -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
+    opacity: .8;
+    
 }
 .responsivo {
     top: 40%;
     left: 40%;
     -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
+    opacity: 0.8;
 }
 .otimizacoes {
     top: 70%;
     left: 65%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
+    opacity: .4;
 }
 .agilidade {
     top: 75%;
     left: 35%;
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
+    opacity: .3;
 }
 .design {
     top: 40%;
     left: 60%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+    opacity: .6;
 }
 

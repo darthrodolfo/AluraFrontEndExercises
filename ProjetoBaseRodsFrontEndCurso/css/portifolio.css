@@ -4,6 +4,7 @@
 
 .container-figuras img {
     width: 100%;
+    box-shadow: 0 0 4px #000;
 }
 
 .container-figuras li {
@@ -24,4 +25,3 @@ h3 {
     padding-top: 50px;
     padding-bottom: 10px;
 }
-
