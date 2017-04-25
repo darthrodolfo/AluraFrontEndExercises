@@ -1,3 +1,61 @@
 form {
+    width: 50%;
+    padding: 2em 10em;
+}
+
+body {
+    position: relative;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.dados-contato input,
+.fieldset-mensagem textarea {
     width: 100%;
+    border: 1em 1em;
+    border-color: gray;
+    padding: .5em;
+}
+
+.dados-contato input::invalid {
+    \\border: 1em 1em red;
+    border: 5px 5px red;
+}
+
+.dados-contato input::hover,
+.dados-contato input::focus {
+    box-shadow: 1px 1px .5em #000;
+}
+
+.dados-contato input:focus {
+    background-color: lightyellow;
+}
+
+.fieldset-mensagem label {
+    font-weight: bold;
+}
+
+.div-botao {
+    position: relative;
+    width: 100%;
+}
+
+.div-botao button::hover,
+.div-botao button::focus {
+    background-color: 8C1D3D;
+    box-shadow: 2px 2px .2em #000;
+}
+
+.botao-enviar {
+    border: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: purple;
+    color: white;
+    padding: 1em;
+    position: absolute;
+    right: 0;
 }

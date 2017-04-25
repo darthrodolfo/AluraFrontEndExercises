@@ -13,7 +13,7 @@
         <main>
             <h1 class="titulo-principal">Contato</h1>
                 <form>
-                    <fieldset>
+                    <fieldset class="dados-contato">
                         <legend>Seus dados</legend>
                         <label>
                             Nome:
@@ -28,12 +28,6 @@
                     
                     <fieldset>
                         <legend>Assunto</legend>
-                        
-                        <select name="assunto" required>
-                            <option value="Blog">Blog</option>
-                            <option value="Serviço">Serviço</option>
-                            <option value="Outro">Outro</option>
-                        </select>
                         
                         <label>
                             <input type="radio" name="assunto" value="Blog">
@@ -52,14 +46,16 @@
                         </fieldset>
                     </fieldset>
                     
-                    <fieldset>
+                    <fieldset class="fieldset-mensagem">
                         <label>
                             Mensagem:
                             <textarea id="msg" name="mensagem" cols="30" rows="6" placeholder="Digite aqui sua mensagem"></textarea>
                         </label>
                     </fieldset>
                     
-                    <button type="submit">Enviar mensagem</button>
+                    <div class="div-botao">
+                        <button class="botao-enviar" type="submit" tabindex="3">Enviar mensagem</button>
+                    </div>
                     
                 </form>
         </main>
