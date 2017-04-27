@@ -1,61 +1,106 @@
 form {
-    width: 50%;
-    padding: 2em 10em;
+    width: 60%;
+    padding-top: 1em;
+    padding-left: 5.5em;
 }
 
-body {
-    position: relative;
-}
-
-legend {
+legend,
+label[for="mensagem"] {
     font-weight: bold;
-    font-size: 1.2em;
+    margin-top: 1em;
+    padding-top: 1em;
 }
 
-.dados-contato input,
-.fieldset-mensagem textarea {
+label[for],
+button {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .5em;
     width: 100%;
-    border: 1em 1em;
-    border-color: gray;
-    padding: .5em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
 }
 
-.dados-contato input::invalid {
-    \\border: 1em 1em red;
-    border: 5px 5px red;
+fieldset>fieldset {
+    display: inline;
 }
 
-.dados-contato input::hover,
-.dados-contato input::focus {
-    box-shadow: 1px 1px .5em #000;
+label[for="outro"] {
+    display: inline;
 }
 
-.dados-contato input:focus {
-    background-color: lightyellow;
+input[name="outro-assunto"] {
+    width: auto;
 }
 
-.fieldset-mensagem label {
-    font-weight: bold;
+input:focus,
+textarea:focus {
+    background-color: #FFD;
 }
 
-.div-botao {
-    position: relative;
-    width: 100%;
+input:invalid {
+    box-shadow: 0 0 .5em red;
 }
 
-.div-botao button::hover,
-.div-botao button::focus {
-    background-color: 8C1D3D;
-    box-shadow: 2px 2px .2em #000;
-}
-
-.botao-enviar {
+button {
     border: 0;
-    font-size: 1.2em;
-    font-weight: bold;
-    background-color: purple;
+    padding: .5em 1em;
+    font-family: "Open Sans Condensed", sans-serif;
+    background-color: #3C1D3D;
     color: white;
-    padding: 1em;
+    font-size: 1.2em;
+    margin-top: .5em;
+    margin-left: auto;
+}
+
+button:hover,
+button:focus {
+    background-color: #8C1D3D;
+}
+
+input[value="Outro"]~input {
+    display: none;
+}
+
+input[value="Outro"]:checked~input {
+    display: inline;
+}
+
+.com-icone {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.com-icone::after {
+    content: '';
     position: absolute;
-    right: 0;
+    width: 2em;
+    height: 2em;
+    background-color: #8C1D3D;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 100%;
+}
+
+.com-icone+input {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+    margin-top: 0;
+}
+
+.com-icone[for="nome"]::after {
+    background-image: url(../img/usuario.png);
+}
+
+.com-icone[for="email-contato"]::after {
+    background-image: url(../img/email.png);
 }

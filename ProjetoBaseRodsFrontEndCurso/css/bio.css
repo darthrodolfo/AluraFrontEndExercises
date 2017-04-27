@@ -60,3 +60,27 @@ blockquote {
     box-shadow: 0 0 0 99999px rgba(0, 0, 0, .5);
     transform: scale(1.1) rotate(5deg);
 }
+
+
+table {
+    border-collapse: separate;
+    padding-top: 1em;
+    padding-left: 2em;    
+}
+
+thead th {
+    background-color: lightcoral;
+    border-spacing: 5px;
+    border: 5px 5px black;
+}
+
+tbody td {
+    background-color: aquamarine;
+    clear: right;
+}
+
+tbody th {
+    background-color: aqua;
+    display: block;
+}
+
