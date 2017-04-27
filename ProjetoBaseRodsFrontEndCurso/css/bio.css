@@ -1,4 +1,4 @@
-.container > p::first-letter {
+.container>p::first-letter {
     font-size: 2em;
     font-weight: bold;
     text-shadow: 1px 1px .1em #000;
@@ -14,11 +14,11 @@ cite {
 }
 
 blockquote {
-	background-color: #D9E5E3;
-	border: 10px solid #C2CCCA;
-	width: 250px;
-	box-sizing: border-box;
-	margin: 20px 40px;
+    background-color: #D9E5E3;
+    border: 10px solid #C2CCCA;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 20px 40px;
 }
 
 .citacao-bio {
@@ -37,7 +37,7 @@ blockquote {
     line-height: .8;
 }
 
-.citacao-bio > p {
+.citacao-bio>p {
     position: relative;
 }
 
@@ -61,26 +61,33 @@ blockquote {
     transform: scale(1.1) rotate(5deg);
 }
 
-
 table {
     border-collapse: separate;
+    border-spacing: .25em;
     padding-top: 1em;
-    padding-left: 2em;    
+    padding-left: 1em;
+}
+
+th {
+    font-weight: bold;
+    color: white;
+    padding: .2em;
+}
+
+th,
+td {
+    padding: 1em;
 }
 
 thead th {
-    background-color: lightcoral;
+    background-color: #3C1D3D;
     border-spacing: 5px;
-    border: 5px 5px black;
 }
 
 tbody td {
-    background-color: aquamarine;
-    clear: right;
+    background-color: #eee;
 }
 
 tbody th {
-    background-color: aqua;
-    display: block;
+    background-color: #851944;
 }
-
