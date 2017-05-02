@@ -1,20 +1,34 @@
 .container-figuras {
-    margin: auto;
+    width: 60%;
+    padding-left: 5em;
 }
 
-.container-figuras img {
+.lista-figuras {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-figuras img {
     width: 100%;
     box-shadow: 0 0 4px #000;
 }
 
-.container-figuras li {
-    display: inline-block;
+.lista-figuras li {
     border: 8px solid black;
     margin-right: 16px;
     margin-bottom: 16px;
     padding: 16px;
     width: 45%;
     box-sizing: border-box;
+    flex: 1 1 45%;
+}
+
+.container-figuras li~li {}
+
+.lista-figuras li:first-child {
+    flex: 2;
+    flex-basis: 100%;
 }
 
 body {

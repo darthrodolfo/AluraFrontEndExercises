@@ -3,6 +3,17 @@ body {
     background-color: #F2FFFC;
     font-size: 120%;
     line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navegacao-site {
+    padding: 1em;
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    text-align: center;
+    width: calc(0.9 * 300px);
+    padding-top: calc(300px + 1em);
 }
 
 h1,
@@ -14,7 +25,7 @@ h2,
 h1 {
     text-transform: uppercase;
     font-size: 3em;
-    text-shadow: 5px 5px #000;
+    text-shadow: 3px 3px #000;
 }
 
 footer {
@@ -39,18 +50,12 @@ nav a {
 }
 
 main {
-    float: left;
-    width: calc(100% - 0.9 * 300px);
+    padding-bottom: 4em;
+    flex-grow: 1;
 }
 
 main a {
     color: #851944;
-}
-
-aside {
-    float: right;
-    box-sizing: border-box;
-    width: 15%;
 }
 
 aside a {
@@ -76,33 +81,24 @@ h2 {
 }
 
 .container {
-    width: 720px;
-    margin: auto;
-    padding: 30px 0;
-    padding-bottom: 150px;
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
 }
 
 .foto-do-cara,
 .navegacao-site {
-    float: right;
-    border-left: 5px solid black;
-    border-bottom: 5px solid black;
+    border-left: .5em solid black;
     box-sizing: border-box;
 }
 
 .foto-do-cara {
+    border-bottom: .5em solid black;
     position: absolute;
-    right: 0;
     top: 0;
-}
-
-.navegacao-site {
-    background-color: #3C1D3D;
-    color: #F2FFFC;
-    text-align: center;
-    position: relative;
-    top: 305px;
-    width: calc(0.9 * 300px);
+    right: 0;
+    height: 300px;
 }
 
 .navegacao-site a {
@@ -120,7 +116,6 @@ h2 {
 }
 
 .citacao-bio,
-.navegacao-site,
 .page-footer {
     padding: 20px;
 }
